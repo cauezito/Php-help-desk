@@ -5,7 +5,7 @@
     $usuario_atenticado = false;
 
     $usuarios_app = array(
-        array('email' => 'caah.sfc@live.com', 'senha' => '134679'),
+        array('email' => 'caah.sfc@live.com', 'senha' => '123'),
         array('email' => 'nokylevs@gmail.com', 'senha' => 'abc')
     );
 
@@ -19,6 +19,7 @@
     if($usuario_atenticado){
         echo 'usuário autenticado';
         $_SESSION['autenticado'] = 'sim';
+        header('Location: home.php');
     } else {
         //FORÇA O REDIRECIONAMENTO
         $_SESSION['autenticado'] = 'não';
