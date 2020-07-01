@@ -4,7 +4,7 @@
 
   $chamados = array();
   //abrir arquivo .txt
-  $arquivo = fopen('chamado.txt', 'r');
+  $arquivo = fopen('../../../app_help_desk/chamado.txt', 'r');
   while(!feof($arquivo)){ //testa pelo fim do arquivo
     $registro = fgets($arquivo);
     $chamados[] = $registro;

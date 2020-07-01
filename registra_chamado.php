@@ -6,7 +6,7 @@ $categoria = str_replace('#', '-', $_POST['categoria']);
 $descricao = str_replace('#', '-', $_POST['descricao']);
 $texto = $_SESSION['id'].'#'. $titulo.'#'.$categoria.'#'.$descricao. PHP_EOL;
 
-$chamado = fopen('chamado.txt', 'a');
+$chamado = fopen('../../../app_help_desk/chamado.txt', 'a');
 fwrite($chamado, $texto);
 fclose($chamado);
 

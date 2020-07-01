@@ -1,3 +1,0 @@
-3#O meu notebook não funciona mais!#Hardware#Tela preta ao ligar.
-3#O teclado do notebook parou de funcionar completamente#Hardware#Não funciona mais nenhuma tecla.
-2#Este será visto apenas pelos adms#Criação Usuário#\aeaeq
