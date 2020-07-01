@@ -1,9 +1,5 @@
-<?php
-  session_start();
-  if(!isset ($_SESSION['autenticado']) ||  $_SESSION['autenticado'] != 'sim'){
-    header('Location: index.php');
-  }
-?>
+<?php require_once "validador_acesso.php" ?>
+
 <html>
   <head>
     <meta charset="utf-8" />
