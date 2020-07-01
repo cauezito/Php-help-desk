@@ -1,4 +1,7 @@
 <?php
+    session_start();
+
+
     $usuario_atenticado = false;
 
     $usuarios_app = array(
@@ -15,8 +18,10 @@
 
     if($usuario_atenticado){
         echo 'usuário autenticado';
+        $_SESSION['autenticado'] = 'sim';
     } else {
         //FORÇA O REDIRECIONAMENTO
+        $_SESSION['autenticado'] = 'não';
         header('Location: index.php?login=erro');
     }
 
